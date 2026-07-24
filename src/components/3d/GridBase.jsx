@@ -15,10 +15,10 @@ export function GridBase({ onPointerMove, onPointerOut, onPointerDown, onPointer
         />
       )}
 
-      {/* Invisible raycast receiver plane */}
+      {/* Dark background raycast receiver plane aligned with grid lines */}
       <mesh
         rotation={[-Math.PI / 2, 0, 0]}
-        position={[0, 0, 0]}
+        position={[0.5, 0, 0.5]}
         onPointerMove={onPointerMove}
         onPointerOut={onPointerOut}
         onPointerDown={onPointerDown}
